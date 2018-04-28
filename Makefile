@@ -187,6 +187,7 @@ else ifeq ($(platform), ctr)
 	CFLAGS += -march=armv6k -mtune=mpcore -mfloat-abi=hard
 	CFLAGS += -Wall -mword-relocations
 	CFLAGS += -fomit-frame-pointer -ffast-math
+	CFLAGS += -DHAVE_STRLWR
 	STATIC_LINKING = 1
 
 # emscripten
